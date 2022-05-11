@@ -7,7 +7,7 @@ import {
   ScrollView,
   Alert,
   Pressable,
-  TouchableOpacity,
+  TouchableOpacity
 } from 'react-native';
 import Keyboard from './Keyboard';
 import { ENTER, DELETE, colors } from '../../../constants';
@@ -102,12 +102,12 @@ const Game = () => {
         [
           ({
             text: 'Go Home',
-            onPress: () => navigation.navigate('Home'),
+            onPress: () => navigation.navigate('Home')
           },
           {
             text: 'View Leaderboard',
-            onPress: () => navigation.navigate('Leaderboard'),
-          }),
+            onPress: () => navigation.navigate('Leaderboard')
+          })
         ]
       );
       setGameState('lost');
@@ -130,12 +130,12 @@ const Game = () => {
         [
           ({
             text: 'Go Home',
-            onPress: () => navigation.navigate('Home'),
+            onPress: () => navigation.navigate('Home')
           },
           {
             text: 'View Leaderboard',
-            onPress: () => navigation.navigate('Leaderboard'),
-          }),
+            onPress: () => navigation.navigate('Leaderboard')
+          })
         ]
       );
     } else if (checkIfWon() && gameState !== 'won') {
@@ -156,12 +156,12 @@ const Game = () => {
         [
           ({
             text: 'Go Home',
-            onPress: () => navigation.navigate('Home'),
+            onPress: () => navigation.navigate('Home')
           },
           {
             text: 'View Leaderboard',
-            onPress: () => navigation.navigate('Leaderboard'),
-          }),
+            onPress: () => navigation.navigate('Leaderboard')
+          })
         ]
       );
       setGameState('won');
@@ -184,12 +184,12 @@ const Game = () => {
         [
           ({
             text: 'Go Home',
-            onPress: () => navigation.navigate('Home'),
+            onPress: () => navigation.navigate('Home')
           },
           {
             text: 'View Leaderboard',
-            onPress: () => navigation.navigate('Leaderboard'),
-          }),
+            onPress: () => navigation.navigate('Leaderboard')
+          })
         ]
       );
       setGameState('lost');
@@ -205,7 +205,7 @@ const Game = () => {
       guessScore: getGuessScore(),
       livesScore: getLivesScore(),
       totalScore: getTotalScore(),
-      word,
+      word
     };
 
     try {
@@ -393,8 +393,8 @@ const Game = () => {
                     borderColor: isCellActive(i, j)
                       ? colors.grey
                       : colors.darkgrey,
-                    backgroundColor: getCellBGColor(i, j),
-                  },
+                    backgroundColor: getCellBGColor(i, j)
+                  }
                 ]}
               >
                 <Text style={gameStyles.cellText}>{letter.toUpperCase()}</Text>
