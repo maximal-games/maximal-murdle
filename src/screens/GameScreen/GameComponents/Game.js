@@ -29,7 +29,7 @@ const copyArray = (arr) => {
 const Game = () => {
   const route = useRoute();
   const { duration } = route.params;
-  const [word, setWord] = useState('false');
+  const [word, setWord] = useState('world');
 
   const letters = word.split('');
   const remainingLetters = {};
