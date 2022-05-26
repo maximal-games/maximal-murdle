@@ -2,6 +2,11 @@
 
 ### The Wordle clone everyone's _DYING_ to play
 
+##
+- Download from the [Play Store](https://play.google.com/store/apps/details?id=com.maximal.maximalMurdle)
+- Watch our [product demonstration](https://youtu.be/mv_5oD6CgLU)
+##
+
 ![Project Logo](https://github.com/yuridevweb/maximal-murdle/blob/main/assets/murdle-logo.png)
 
 ###
